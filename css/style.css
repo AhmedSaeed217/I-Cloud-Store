@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #222;
+    color: #fff;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.crud .head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.crud .head h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    animation: spacing 4s infinite;
+    -webkit-animation: spacing 4s infinite;
+}
+
+@keyframes spacing {
+    0% {
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    50% {
+        color: #a00d02;
+        letter-spacing: 3px;
+    }
+
+    100% {
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #111;
+    margin: 10px 0;
+    padding: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input::placeholder {
+    font-size: 25px;
+
+}
+
+input:focus {
+    background-color: #000;
+
+}
+
+
+.prices input {
+    width: 20%;
+}
+
+.prices #total {
+    background-color: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#total::before {
+    content: 'TOTAL : ';
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+.searchblock {
+    margin: 20px 0;
+}
+
+.btnsearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button {
+    width: 45%;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    direction: rtl;
+
+}
+
+table th {
+    background-color: #000;
+}
+
+th,
+td {
+    padding: 5px;
+    font-size: 20px;
+}
+
+#deleteall {
+    margin: 10px 0;
+}

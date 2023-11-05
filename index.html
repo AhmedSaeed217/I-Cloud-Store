@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <title>I CLOUD</title>
+</head>
+
+<body>
+  <div class="crud">
+    <div class="head">
+      <h2>i cloud<span><img width="35px" src="imgs/logo.png"></span>Store</h2>
+
+    </div>
+    <div class="inputs">
+      <input type="text" id="title" placeholder="اسم الجهاز">
+      <div class="prices">
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="السعر">
+        <input onkeyup="getTotal()" type="number" id="taxes" placeholder="الضرائب">
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="الاعلانات">
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="الخصم">
+        <small id="total"></small>
+      </div>
+      <input placeholder="العدد" id="count" type="number">
+      <input placeholder="القسم" id="category" type="text">
+      <button id="submit">Create</button>
+
+
+
+
+    </div>
+    <div class="outputs">
+      <div class="searchblock">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="بحث">
+        <div class="btnsearch">
+          <button onclick="getSearchMood(this.id)" id="searchtitle">بحث بالاسم</button>
+          <button onclick="getSearchMood(this.id)" id="searchcategory">بحث بالقسم</button>
+        </div>
+      </div>
+      <div id="deleteall">
+
+      </div>
+      <table>
+        <tr>
+          <th>رقم</th>
+          <th>اسم الجهاز</th>
+          <th>السعر</th>
+          <th>الضرائب</th>
+          <th>الاعلانات</th>
+          <th>الخصم</th>
+          <th>المجموع</th>
+          <th>القسم</th>
+          <th>تحديث</th>
+          <th>مسح</th>
+          <th id="totalSumTotal">المجموع الكلي :</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
